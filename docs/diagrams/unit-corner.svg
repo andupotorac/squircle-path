@@ -21,6 +21,8 @@
       <circle cx="1" cy="1" r="0.025"/>
     </g>
   </g>
-  <text x="70" y="205" fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">One normalized corner, 3 cubic Bezier segments</text>
-  <text x="70" y="226" fill="#475569" font-family="system-ui, sans-serif" font-size="13">Black points are segment endpoints. Red points are control points.</text>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="180" y="205" fill="#0f172a" font-size="15">One normalized corner</text>
+    <text x="180" y="226" fill="#475569" font-size="12">3 cubic Bezier segments; black endpoints, red controls</text>
+  </g>
 </svg>

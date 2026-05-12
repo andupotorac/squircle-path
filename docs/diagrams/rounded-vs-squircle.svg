@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 255" role="img" aria-labelledby="title desc">
   <title id="title">Rounded rectangle versus squircle</title>
   <desc id="desc">A standard rounded rectangle compared with a smoother squircle path.</desc>
-  <rect width="520" height="240" fill="#f8fafc"/>
+  <rect width="520" height="255" fill="#f8fafc"/>
   <g transform="translate(60 48)">
     <text x="0" y="-18" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15">border-radius</text>
     <rect x="0" y="0" width="160" height="120" rx="36" fill="#cbd5e1"/>
@@ -11,5 +11,8 @@
     <text x="0" y="-18" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15">squircle-path</text>
     <path d="M 36 0 L 124 0 C 134.8 0 141.028 0 146.284 1.404 C 152.944 3.168 156.832 7.056 158.596 13.716 C 160 18.972 160 25.2 160 36 L 160 84 C 160 94.8 160 101.028 158.596 106.284 C 156.832 112.944 152.944 116.832 146.284 118.596 C 141.028 120 134.8 120 124 120 L 36 120 C 25.2 120 18.972 120 13.716 118.596 C 7.056 116.832 3.168 112.944 1.404 106.284 C 0 101.028 0 94.8 0 84 L 0 36 C 0 25.2 0 18.972 1.404 13.716 C 3.168 7.056 7.056 3.168 13.716 1.404 C 18.972 0 25.2 0 36 0 Z" fill="#2563eb"/>
   </g>
-  <text x="60" y="210" fill="#475569" font-family="system-ui, sans-serif" font-size="13">Both fit the same box and radius idea. The squircle eases more gradually into the corner.</text>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="260" y="212" fill="#475569" font-size="13">Both fit the same box and radius.</text>
+    <text x="260" y="232" fill="#475569" font-size="13">The squircle eases more gradually into the corner.</text>
+  </g>
 </svg>

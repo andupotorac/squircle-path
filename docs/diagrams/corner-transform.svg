@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 280" role="img" aria-labelledby="title desc">
   <title id="title">Squircle corner transforms</title>
   <desc id="desc">The same normalized corner is mirrored or rotated into all four rectangle corners.</desc>
-  <rect width="420" height="260" fill="#f8fafc"/>
+  <rect width="420" height="280" fill="#f8fafc"/>
   <rect x="80" y="40" width="260" height="160" rx="0" fill="#e2e8f0"/>
   <path d="M 120 40 L 300 40 C 312 40 318.92 40 324.76 41.56 C 332.16 43.52 336.48 47.84 338.44 55.24 C 340 61.08 340 68 340 80 L 340 160 C 340 172 340 178.92 338.44 184.76 C 336.48 192.16 332.16 196.48 324.76 198.44 C 318.92 200 312 200 300 200 L 120 200 C 108 200 101.08 200 95.24 198.44 C 87.84 196.48 83.52 192.16 81.56 184.76 C 80 178.92 80 172 80 160 L 80 80 C 80 68 80 61.08 81.56 55.24 C 83.52 47.84 87.84 43.52 95.24 41.56 C 101.08 40 108 40 120 40 Z" fill="#2563eb"/>
   <g font-family="system-ui, sans-serif" font-size="14" fill="#0f172a">
@@ -21,5 +21,8 @@
       <path d="M 0 0 L 8 4 L 0 8 Z" fill="#334155"/>
     </marker>
   </defs>
-  <text x="72" y="250" fill="#475569" font-family="system-ui, sans-serif" font-size="13">A single corner definition is transformed into each rectangle corner.</text>
+  <g font-family="system-ui, sans-serif" text-anchor="middle">
+    <text x="210" y="250" fill="#475569" font-size="13">The same normalized corner is mirrored</text>
+    <text x="210" y="268" fill="#475569" font-size="13">into each rectangle corner.</text>
+  </g>
 </svg>
