@@ -4,7 +4,6 @@
   <rect width="640" height="205" fill="#f8fafc"/>
 
   <g transform="translate(56 54)">
-    <text x="0" y="-22" fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" font-weight="600">Requested</text>
     <rect x="0" y="0" width="220" height="120" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
 
     <path d="M 0 92 C 0 42 40 2 90 2" fill="none" stroke="#ef4444" stroke-width="5" stroke-linecap="round"/>
@@ -15,7 +14,6 @@
   <path d="M 306 116 L 350 116" stroke="#334155" stroke-width="3" marker-end="url(#arrow)"/>
 
   <g transform="translate(384 54)">
-    <text x="0" y="-22" fill="#0f172a" font-family="system-ui, sans-serif" font-size="17" font-weight="600">Clamped</text>
     <rect x="0" y="0" width="220" height="120" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
     <path d="M 110 0 L 110 0 C 143 0 162 0 178 4 C 198 9 211 22 216 42 C 220 58 220 77 220 110 L 220 120 L 0 120 L 0 110 C 0 77 0 58 4 42 C 9 22 22 9 42 4 C 58 0 77 0 110 0 Z" fill="#2563eb"/>
 

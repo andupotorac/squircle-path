@@ -9,7 +9,8 @@ that normalized corner around a rectangle.
 
 ![Rounded rectangle compared with a squircle](docs/diagrams/rounded-vs-squircle.svg)
 
-Both shapes fit the same box and use the same radius idea. The squircle eases
+Left: a normal `border-radius` rounded rectangle. Right: the generated squircle
+path. Both fit the same box and use the same radius idea, but the squircle eases
 more gradually into the corner.
 
 ## Why
@@ -135,16 +136,18 @@ Straight edges connect the four corners.
 
 ![Corner transform diagram](docs/diagrams/corner-transform.svg)
 
-The same normalized corner definition is mirrored or rotated into each of the
-four rectangle corners.
+The same normalized corner definition is mirrored or rotated into the top-left,
+top-right, bottom-right, and bottom-left corners.
 
 When a requested radius is too large, the library clamps it to the available
 space. If two corners compete for the same edge, they are scaled down together.
 
 ![Radius clamp diagram](docs/diagrams/radius-clamp.svg)
 
-If adjacent requested radii do not fit along an edge, the library scales them
-down together so the final corners share the available edge cleanly.
+Left: requested corner radii that compete for the same edge. Right: the same
+radii after scaling. If adjacent requested radii do not fit along an edge, the
+library scales them down together so the final corners share the available edge
+cleanly.
 
 ## SVG
 

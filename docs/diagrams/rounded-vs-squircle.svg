@@ -3,12 +3,10 @@
   <desc id="desc">A standard rounded rectangle compared with a smoother squircle path.</desc>
   <rect width="520" height="195" fill="#f8fafc"/>
   <g transform="translate(60 48)">
-    <text x="0" y="-18" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15">border-radius</text>
     <rect x="0" y="0" width="160" height="120" rx="36" fill="#cbd5e1"/>
     <path d="M 36 0 L 124 0 A 36 36 0 0 1 160 36 L 160 84 A 36 36 0 0 1 124 120 L 36 120 A 36 36 0 0 1 0 84 L 0 36 A 36 36 0 0 1 36 0 Z" fill="none" stroke="#334155" stroke-width="3"/>
   </g>
   <g transform="translate(300 48)">
-    <text x="0" y="-18" fill="#0f172a" font-family="system-ui, sans-serif" font-size="15">squircle-path</text>
     <path d="M 36 0 L 124 0 C 134.8 0 141.028 0 146.284 1.404 C 152.944 3.168 156.832 7.056 158.596 13.716 C 160 18.972 160 25.2 160 36 L 160 84 C 160 94.8 160 101.028 158.596 106.284 C 156.832 112.944 152.944 116.832 146.284 118.596 C 141.028 120 134.8 120 124 120 L 36 120 C 25.2 120 18.972 120 13.716 118.596 C 7.056 116.832 3.168 112.944 1.404 106.284 C 0 101.028 0 94.8 0 84 L 0 36 C 0 25.2 0 18.972 1.404 13.716 C 3.168 7.056 7.056 3.168 13.716 1.404 C 18.972 0 25.2 0 36 0 Z" fill="#2563eb"/>
   </g>
 </svg>
