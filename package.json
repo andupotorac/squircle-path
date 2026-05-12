@@ -1,0 +1,70 @@
+{
+  "name": "squircle-path",
+  "version": "0.1.0",
+  "description": "Tiny TypeScript utility for generating smooth squircle SVG paths for SVG, CSS clip-path, and Canvas.",
+  "license": "MIT",
+  "author": "Andu Potorac",
+  "homepage": "https://github.com/andupotorac/squircle-path#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andupotorac/squircle-path.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andupotorac/squircle-path/issues"
+  },
+  "keywords": [
+    "squircle",
+    "superellipse",
+    "svg",
+    "clip-path",
+    "canvas",
+    "path",
+    "rounded-corners",
+    "bezier",
+    "typescript"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "import": "./dist/browser.mjs",
+      "require": "./dist/browser.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs/diagrams",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "clean": "rimraf dist",
+    "dev": "vite build --watch",
+    "lint": "eslint src/ tests/ --ext .ts",
+    "lint:fix": "eslint src/ tests/ --ext .ts --fix",
+    "prepublishOnly": "pnpm run release:check",
+    "release:check": "pnpm run lint && pnpm run type-check && pnpm run test && pnpm run build",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.17",
+    "@types/react": "19.2.2",
+    "react": "^19.1.1",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.2",
+    "vite": "^5.4.20",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.2.2"
+  },
+  "sideEffects": false
+}

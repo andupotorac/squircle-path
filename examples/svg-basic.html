@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>squircle-path SVG example</title>
+  </head>
+  <body>
+    <svg viewBox="0 0 240 120" width="240" height="120" aria-label="Squircle SVG path">
+      <path id="squircle" fill="#2563eb" />
+    </svg>
+
+    <script type="module">
+      import { getSquirclePath } from "../dist/index.mjs";
+
+      const path = getSquirclePath({
+        width: 240,
+        height: 120,
+        radius: 32,
+      });
+
+      document.querySelector("#squircle").setAttribute("d", path);
+    </script>
+  </body>
+</html>

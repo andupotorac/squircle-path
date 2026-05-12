@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>squircle-path CSS clip-path example</title>
+    <style>
+      .card {
+        width: 240px;
+        height: 120px;
+        background: linear-gradient(135deg, #2563eb, #9333ea);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" aria-label="Squircle clipped card"></div>
+
+    <script type="module">
+      import { getSquirclePath } from "../dist/index.mjs";
+
+      const card = document.querySelector(".card");
+      const path = getSquirclePath({
+        width: 240,
+        height: 120,
+        radius: 32,
+      });
+
+      card.style.clipPath = `path("${path}")`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-labelledby="title desc">
+  <title id="title">Normalized squircle corner</title>
+  <desc id="desc">A unit top-right corner made from three cubic Bezier segments and their control points.</desc>
+  <rect width="360" height="240" fill="#f8fafc"/>
+  <g transform="translate(70 40) scale(140)">
+    <rect x="0" y="0" width="1" height="1" fill="none" stroke="#cbd5e1" stroke-width="0.01"/>
+    <path d="M 0 0 C 0.3 0 0.473 0 0.619 0.039 C 0.804 0.088 0.912 0.196 0.961 0.381 C 1 0.527 1 0.7 1 1" fill="none" stroke="#2563eb" stroke-width="0.035" stroke-linecap="round"/>
+    <path d="M 0 0 L 0.3 0 M 0.473 0 L 0.619 0.039 M 0.619 0.039 L 0.804 0.088 M 0.912 0.196 L 0.961 0.381 M 0.961 0.381 L 1 0.527 M 1 0.7 L 1 1" fill="none" stroke="#94a3b8" stroke-width="0.01" stroke-dasharray="0.03 0.025"/>
+    <g fill="#ef4444">
+      <circle cx="0.3" cy="0" r="0.025"/>
+      <circle cx="0.473" cy="0" r="0.025"/>
+      <circle cx="0.804" cy="0.088" r="0.025"/>
+      <circle cx="0.912" cy="0.196" r="0.025"/>
+      <circle cx="1" cy="0.527" r="0.025"/>
+      <circle cx="1" cy="0.7" r="0.025"/>
+    </g>
+    <g fill="#111827">
+      <circle cx="0" cy="0" r="0.025"/>
+      <circle cx="0.619" cy="0.039" r="0.025"/>
+      <circle cx="0.961" cy="0.381" r="0.025"/>
+      <circle cx="1" cy="1" r="0.025"/>
+    </g>
+  </g>
+  <text x="70" y="205" fill="#0f172a" font-family="system-ui, sans-serif" font-size="16">One normalized corner, 3 cubic Bezier segments</text>
+  <text x="70" y="226" fill="#475569" font-family="system-ui, sans-serif" font-size="13">Black points are segment endpoints. Red points are control points.</text>
+</svg>

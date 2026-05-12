@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>squircle-path Canvas example</title>
+  </head>
+  <body>
+    <canvas width="240" height="120" aria-label="Squircle canvas drawing"></canvas>
+
+    <script type="module">
+      import { getSquirclePath } from "../dist/index.mjs";
+
+      const canvas = document.querySelector("canvas");
+      const context = canvas.getContext("2d");
+      const path = new Path2D(
+        getSquirclePath({
+          width: 240,
+          height: 120,
+          radius: 32,
+        }),
+      );
+
+      context.save();
+      context.clip(path);
+      context.fillStyle = "#111827";
+      context.fillRect(0, 0, 240, 120);
+      context.restore();
+    </script>
+  </body>
+</html>
