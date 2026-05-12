@@ -9,6 +9,9 @@ that normalized corner around a rectangle.
 
 ![Rounded rectangle compared with a squircle](docs/diagrams/rounded-vs-squircle.svg)
 
+Both shapes fit the same box and use the same radius idea. The squircle eases
+more gradually into the corner.
+
 ## Why
 
 CSS `border-radius` uses circular arcs. Those arcs meet straight edges abruptly,
@@ -123,15 +126,25 @@ three cubic Bezier segments.
 
 ![One normalized squircle corner](docs/diagrams/unit-corner.svg)
 
+The black points are segment endpoints. The red points are Bezier control
+points. Together they form one normalized corner from three cubic Bezier
+segments.
+
 The same normalized corner is rotated or mirrored into the other corners.
 Straight edges connect the four corners.
 
 ![Corner transform diagram](docs/diagrams/corner-transform.svg)
 
+The same normalized corner definition is mirrored or rotated into each of the
+four rectangle corners.
+
 When a requested radius is too large, the library clamps it to the available
 space. If two corners compete for the same edge, they are scaled down together.
 
 ![Radius clamp diagram](docs/diagrams/radius-clamp.svg)
+
+If adjacent requested radii do not fit along an edge, the library scales them
+down together so the final corners share the available edge cleanly.
 
 ## SVG
 
